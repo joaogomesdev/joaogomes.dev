@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { signIn, signOut, useSession } from "next-auth/react";
+import Link from "next/link";
 // import { trpc } from "../utils/trpc";
 
 const Home: NextPage = () => {
@@ -13,12 +14,14 @@ const Home: NextPage = () => {
       <meta name="description" content="My own peace of the internet" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <main className="bg-gray-900 mx-auto flex min-h-screen flex-col items-center justify-center p-4">
+    <main className="bg-gray-900 mx-auto flex min-h-screen flex-col items-center justify-center gap-20">
+      <div className="flex flex-col items-center justify-center">
         <h1 className="text-5xl font-extrabold leading-normal text-green-400 md:text-[5rem]">
           joaogomes<span className="text-white">.</span><span className="text-purple-600">dev</span>
         </h1>
         <p className="text-3xl text-gray-200">⏳ Coming soon ⏳</p>
-       
+      </div>
+        <a href="https://twitter.com/joaogomesdev" target="_blank" rel="noreferrer"><p className="text-3xl text-cyan-500 cursor-pointer underline">Lets chat!</p></a>      
       </main>
     </>
   );
