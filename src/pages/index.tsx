@@ -21,7 +21,7 @@ const Home: NextPage = () => {
         </h1>
         <p className="text-3xl text-gray-200">⏳ Coming soon ⏳</p>
       </div>
-        <a href="https://twitter.com/joaogomesdev" target="_blank" rel="noreferrer"><p className="text-3xl text-cyan-500 cursor-pointer underline">Find me on twitter!</p></a>      
+        <a href="https://twitter.com/joaogomesdev" target="_blank" rel="noreferrer"><p className="text-3xl text-cyan-500 cursor-pointer underline">Find me on Twitter!</p></a>      
       </main>
     </>
   );
