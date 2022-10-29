@@ -31,9 +31,9 @@ const Container = ({ children }: ContainerProps) => {
             <button aria-label="Toggle Dark Mode" type="button" onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}>
             {mounted && (
               resolvedTheme === 'dark' ? (
-                <HiSun size="28" className="text-zinc-200 hover:text-orange-300"/>
+                <HiSun size="28" className="text-orange-300 hover:text-orange-400"/>
               ) : (
-                <HiMoon size="28" className="text-zinc-200 hover:text-gray-500"/>
+                <HiMoon size="28" className="text-zinc-400 hover:text-gray-500"/>
               )
             )}  
               <span className="sr-only">Sun</span>
