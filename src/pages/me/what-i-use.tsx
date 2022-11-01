@@ -139,7 +139,7 @@ const WhatIUse = () => {
 
         <div className="mt-10">
           <h2 className="text-2xl font-bold text-indigo-500">⚡️ Becoming a blazing fast developer ⚡️</h2>
-          <p className="text-lg text-zinc-400 mt-3">I'm on the journey of learning a workflow with Neovim, and these are the tools i'm using 🛠️</p>
+          <p className="text-lg text-zinc-400 mt-3">Im on the journey of learning a workflow with Neovim, and these are the tools im using 🛠️</p>
           <div className="ml-10 mt-2 text-lg">
             <li><a className="hover:underline cursor-pointer">NeoVim</a></li>
             <li><a className="hover:underline cursor-pointer">AstroVim</a><span className="text-zinc-500"> - currently testing. Linking it 👍</span></li>
