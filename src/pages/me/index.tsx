@@ -1,13 +1,11 @@
-import type { NextPage } from "next";
+import React from "react";
+import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-
+import type { NextPage } from "next";
 import { AiOutlineArrowRight, AiOutlineArrowUp } from 'react-icons/ai';
 
-import me from '../../assets/me.png'
-import memoji from '../../assets/memoji.png'
+
 
 const Me: NextPage = () => {
   return (
@@ -29,7 +27,7 @@ const Me: NextPage = () => {
           </div>
 
           <Image
-            src={me}
+            src="/me.png"
             alt="Me"
             width={345}
             height={490}
@@ -54,7 +52,7 @@ const Me: NextPage = () => {
             </div>
 
             <Image
-              src={memoji}
+              src="/memoji.png"
               alt="MeMoji"
               width={141}
               height={208}
