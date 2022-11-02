@@ -6,8 +6,8 @@ import React from "react";
 
 import { AiOutlineArrowRight, AiOutlineArrowUp } from 'react-icons/ai';
 
-import me from '../../../public/me.png'
-import memoji from '../../../public/memoji.png'
+import me from '../../assets/me.png'
+import memoji from '../../assets/memoji.png'
 
 const Me: NextPage = () => {
   return (
