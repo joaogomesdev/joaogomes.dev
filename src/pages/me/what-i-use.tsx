@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import setup from '../../assets/setup.jpg'
+import setup from '../../assets/setup.png'
 
 const WhatIUse = () => {
   return (
