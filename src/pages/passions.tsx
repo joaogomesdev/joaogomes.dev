@@ -2,20 +2,20 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import React from "react";
 
-const Me: NextPage = () => {
+const Passions: NextPage = () => {
   return (
-    <> 
+    <>
       <Head>
-        <title>joaogomes.dev | Me</title>
+        <title>joaogomes.dev | Guestbook</title>
         <meta name="description" content="My own peace of the internet" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <h1 className="text-4xl">Me</h1>
+        <h1 className="text-4xl">Passions</h1>
       </div>
     </>
   );
 };
 
-export default Me;
+export default Passions;
 
