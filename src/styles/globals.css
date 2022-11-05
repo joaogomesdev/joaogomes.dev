@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  background-color: theme(backgroundColor.current);
-}
-
 
 .hover-underline-animation {
   display: inline-block;
