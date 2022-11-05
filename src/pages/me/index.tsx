@@ -1,16 +1,13 @@
-import type { NextPage } from "next";
+import React from "react";
+import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-
+import type { NextPage } from "next";
 import { AiOutlineArrowRight, AiOutlineArrowUp } from 'react-icons/ai';
 
-import me from '../../assets/me.png'
-import memoji from '../../assets/memoji.png'
-
 const Me: NextPage = () => {
-  return (
+
+        return (
     <>
       <Head>
         <title>joaogomes.dev | Me</title>
@@ -29,7 +26,7 @@ const Me: NextPage = () => {
           </div>
 
           <Image
-            src={me}
+            src="/me.png"
             alt="Me"
             width={345}
             height={490}
@@ -54,7 +51,7 @@ const Me: NextPage = () => {
             </div>
 
             <Image
-              src={memoji}
+              src="/memoji.png"
               alt="MeMoji"
               width={141}
               height={208}
@@ -136,11 +133,11 @@ const Me: NextPage = () => {
 
           <div className="flex justify-center items-center gap-2">
             <Link href="/me/what-i-use">
-              <h1 className="text-4xl hover:underline hover:underline-offset-4 cursor-pointer">What i use.</h1>
+              <h1 className="text-4xl  hover-underline-animation  after:bg-gray-800 after:dark:bg-white cursor-pointer ">What i use.</h1>
             </Link>
             <Link href="/me/what-i-use">
-              <span className="border-2 border-indigo-500 p-4 rounded-full cursor-pointer">
-                <AiOutlineArrowRight size={28} className="text-[#FBAE95]" />
+              <span className="border-2 border-indigo-500 p-3 rounded-full cursor-pointer">
+                <AiOutlineArrowRight size={24} className="text-[#FBAE95]" />
               </span>
             </Link>
           </div>

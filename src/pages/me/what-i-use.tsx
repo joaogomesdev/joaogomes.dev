@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import setup from '../../assets/setup.png'
 
 const WhatIUse = () => {
   return (
@@ -17,7 +16,7 @@ const WhatIUse = () => {
             <p className="text-lg text-zinc-400 mt-3">Things I use in my daily life and bring me productivity at work. I decided to build this part of <span className="text-yellow-500">joaogomes.dev</span> because i realy like to share and give a possible tip to other devs. ✌️</p>
           </div>
           <div className="mt-8">
-            <Image alt="My great setup" src={setup} width={900} height={600} className="rounded-2xl" />
+            <Image loading="lazy" alt="My great setup" src="/setup.png" width={900} height={600} className="rounded-2xl" />
           </div>
         </div>
 
