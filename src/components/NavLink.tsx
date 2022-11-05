@@ -17,9 +17,9 @@ const NavItem = ({ href, text }: NavItemProp) => {
       <span
         className={cn(
           isActive
-            ? "font-semibold text-gray-800 underline underline-offset-8 dark:text-zinc-100"
-            : "font-normal text-gray-600 hover:underline hover:underline-offset-8 dark:text-zinc-400",
-          "text-blue cursor-pointer p-2 transition-all"
+            ? "font-semibold text-gray-800  dark:text-zinc-100"
+            : "font-normal hover-underline-animation  after:bg-gray-800 after:dark:bg-zinc-400  dark:text-zinc-400",
+          "cursor-pointer"
         )}
       >
         {text}

@@ -5,10 +5,9 @@ import Image from "next/image";
 import type { NextPage } from "next";
 import { AiOutlineArrowRight, AiOutlineArrowUp } from 'react-icons/ai';
 
-
-
 const Me: NextPage = () => {
-  return (
+
+        return (
     <>
       <Head>
         <title>joaogomes.dev | Me</title>
@@ -134,11 +133,11 @@ const Me: NextPage = () => {
 
           <div className="flex justify-center items-center gap-2">
             <Link href="/me/what-i-use">
-              <h1 className="text-4xl hover:underline hover:underline-offset-4 cursor-pointer">What i use.</h1>
+              <h1 className="text-4xl  hover-underline-animation  after:bg-gray-800 after:dark:bg-white cursor-pointer ">What i use.</h1>
             </Link>
             <Link href="/me/what-i-use">
-              <span className="border-2 border-indigo-500 p-4 rounded-full cursor-pointer">
-                <AiOutlineArrowRight size={28} className="text-[#FBAE95]" />
+              <span className="border-2 border-indigo-500 p-3 rounded-full cursor-pointer">
+                <AiOutlineArrowRight size={24} className="text-[#FBAE95]" />
               </span>
             </Link>
           </div>
