@@ -1,8 +1,11 @@
 import type { NextPage } from "next";
+import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import React from "react";
 
-const Guestbook: NextPage = () => {
+const Guestbook: NextPage = () => { 
+  const { data: sessionData } = useSession();
+  
   return (
     <> 
       <Head>
@@ -11,7 +14,24 @@ const Guestbook: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <h1 className="text-4xl">Guestbook</h1>
+        <div className="">  
+          
+        <div>
+            <h1 className="font-bold text-4xl">My Guestbook.</h1>
+             {/*  TODO: put a spinner / waiting ...  */}
+            <p className="text-lg text-zinc-400 mt-3">This part of <span className="text-yellow-500 font-semibold">joaogomes.dev</span> is my guestbook, where anyone can leave a message. Im waiting for yours!</p>
+        </div>
+
+        <div className="flex flex-col xs:flex-row justify-between items-center mt-10">
+          {sessionData && <h2 className="text-xl"> Hello <span className="text-violet-500">{sessionData.user?.name}</span>, welcome.</h2> } 
+          <button 
+            className="py-2 w-full xs:w-auto mt-8 xs:px-2 xs:mt-0 border-2 border-violet-500 rounded-lg cursor-pointer"
+            onClick={sessionData ? () => signOut() : () => signIn()}
+          >   {sessionData ? "Leave 👋" : "Authenticate ✌️"}</button>
+        </div>
+        </div>
+        
+
       </div>
     </>
   );

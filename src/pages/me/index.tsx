@@ -6,41 +6,42 @@ import type { NextPage } from "next";
 import { AiOutlineArrowRight, AiOutlineArrowUp } from 'react-icons/ai';
 
 const Me: NextPage = () => {
-
-        return (
+  return (
     <>
       <Head>
         <title>joaogomes.dev | Me</title>
         <meta name="description" content="My own peace of the internet" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div id="about" className="scroll-smooth">
-        <div className="flex justify-between">
-          <div className="max-w-md flex flex-col gap-4">
+      <div id="about" className="scroll-smooth w-screen 3xs:max-w-2lg md:max-w-4xl">
+        <div className="flex flex-col md:flex-row justify-between items-center sm:items-start gap-10 md:gap-0">
+          <div className="flex flex-col gap-4 self-start">
             <h1 className="font-bold text-4xl">About me.</h1>
+            <div className="flex flex-col gap-4 3xs:max-w-sm md:max-w-md">
             <p className="text-zinc-500 font-mono">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
             <p className="text-zinc-500 font-mono">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
             <p className="text-zinc-500 font-mono">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
             <p className="text-zinc-500 font-mono">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
             <p className="text-zinc-500 font-mono">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+            </div>
           </div>
+          
+          <div>
 
           <Image
             src="/me.png"
             alt="Me"
+            layout="fixed"
             width={345}
             height={490}
-            className="rounded-3xl"
-            style={{
-              maxWidth: '100%',
-              height: 'auto',
-            }}
+            className="rounded-3xl 3xl:mr-2 md:mr-0"
           />
+          </div>
         </div>
+        <div className="flex ">
 
-        <div className="mt-20">
-          <div className="flex justify-between items-center">
-            <div className="max-w-lg flex flex-col gap-4">
+        <div className="mt-20 flex flex-col md:flex-row justify-between gap-8 md:gap-0 w-full items-center md:items-start">
+            <div className="max-w-lg flex flex-col gap-4 ">
               <h1 className="font-bold text-4xl">Bio.</h1>
               <p className="text-zinc-500 text-xl">
                 Enthusiastic about Web / Mobile development
@@ -50,18 +51,17 @@ const Me: NextPage = () => {
               </p>
             </div>
 
-            <Image
-              src="/memoji.png"
-              alt="MeMoji"
-              width={141}
-              height={208}
-              style={{
-                maxWidth: '100%',
-                height: 'auto',
-              }}
-            />
+            <div>
+
+                <Image
+                  src="/memoji.png"
+                  alt="MeMoji"
+                  width={141}
+                  height={208}
+                  />
+            </div>
           </div>
-        </div>
+              </div>
 
 
 
@@ -126,14 +126,14 @@ const Me: NextPage = () => {
         <div className="mt-20 flex justify-between items-end w-full">
 
           <Link href="#about">
-            <span className="border-2 border-indigo-500 p-4 rounded-full cursor-pointer">
+            <span className="border-2 border-indigo-500 p-4 rounded-full cursor-pointer hidden sm:inline-flex">
               <AiOutlineArrowUp size={28} className="text-[#FBAE95]" />
             </span>
           </Link>
 
           <div className="flex justify-center items-center gap-2">
             <Link href="/me/what-i-use">
-              <h1 className="text-4xl  hover-underline-animation  after:bg-gray-800 after:dark:bg-white cursor-pointer ">What i use.</h1>
+              <h1 className="text-4xl hover-underline-animation  after:bg-gray-800 after:dark:bg-white cursor-pointer ">What i use.</h1>
             </Link>
             <Link href="/me/what-i-use">
               <span className="border-2 border-indigo-500 p-3 rounded-full cursor-pointer">
