@@ -11,7 +11,7 @@ export const getServerSideProps :  GetServerSideProps = async ({ req }) => {
 }
 
 
-const Guestbook: NextPage = ({ data }) => { 
+const Guestbook: NextPage = (data) => { 
   const { data: sessionData } = useSession();
   
   return (
