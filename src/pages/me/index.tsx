@@ -38,10 +38,10 @@ const Me: NextPage = () => {
           />
           </div>
         </div>
-        <div className="flex items-start">
+        <div className="flex ">
 
-        <div className="mt-20 flex flex-col md:flex-row justify-between gap-8 md:gap-0">
-            <div className="max-w-lg flex flex-col gap-4">
+        <div className="mt-20 flex flex-col md:flex-row justify-between gap-8 md:gap-0 w-full items-center md:items-start">
+            <div className="max-w-lg flex flex-col gap-4 ">
               <h1 className="font-bold text-4xl">Bio.</h1>
               <p className="text-zinc-500 text-xl">
                 Enthusiastic about Web / Mobile development
@@ -51,15 +51,15 @@ const Me: NextPage = () => {
               </p>
             </div>
 
-            <div className="self-end">
+            <div>
 
-            <Image
-              src="/memoji.png"
-              alt="MeMoji"
-              width={141}
-              height={208}
-              />
-              </div>
+                <Image
+                  src="/memoji.png"
+                  alt="MeMoji"
+                  width={141}
+                  height={208}
+                  />
+            </div>
           </div>
               </div>
 
