@@ -14,14 +14,16 @@ const Me: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div id="about" className="scroll-smooth w-screen 3xs:max-w-2lg md:max-w-4xl">
-        <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-10 md:gap-0">
-          <div className="flex flex-col gap-4 max-w-sm md:max-w-md">
+        <div className="flex flex-col md:flex-row justify-between items-center sm:items-start gap-10 md:gap-0">
+          <div className="flex flex-col gap-4 self-start">
             <h1 className="font-bold text-4xl">About me.</h1>
+            <div className="flex flex-col gap-4 3xs:max-w-sm md:max-w-md">
             <p className="text-zinc-500 font-mono">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
             <p className="text-zinc-500 font-mono">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
             <p className="text-zinc-500 font-mono">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
             <p className="text-zinc-500 font-mono">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
             <p className="text-zinc-500 font-mono">Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+            </div>
           </div>
           
           <div>
@@ -36,9 +38,9 @@ const Me: NextPage = () => {
           />
           </div>
         </div>
+        <div className="flex items-start">
 
-        <div className="mt-20">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-8 md:gap-0">
+        <div className="mt-20 flex flex-col md:flex-row justify-between gap-8 md:gap-0">
             <div className="max-w-lg flex flex-col gap-4">
               <h1 className="font-bold text-4xl">Bio.</h1>
               <p className="text-zinc-500 text-xl">
@@ -49,18 +51,17 @@ const Me: NextPage = () => {
               </p>
             </div>
 
+            <div className="self-end">
+
             <Image
               src="/memoji.png"
               alt="MeMoji"
               width={141}
               height={208}
-              style={{
-                maxWidth: '100%',
-                height: 'auto',
-              }}
-            />
+              />
+              </div>
           </div>
-        </div>
+              </div>
 
 
 
