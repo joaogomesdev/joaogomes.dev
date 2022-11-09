@@ -1,9 +1,17 @@
-import type { NextPage } from "next";
+import type { GetServerSideProps, NextPage } from "next";
 import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import React from "react";
 
-const Guestbook: NextPage = () => { 
+import { prisma } from '../server/db/client'
+
+export const getServerSideProps :  GetServerSideProps = async ({ req }) => {
+  const data = await prisma.user.findMany()
+  return { props: { data } }
+}
+
+
+const Guestbook: NextPage = (data) => { 
   const { data: sessionData } = useSession();
   
   return (
@@ -29,6 +37,9 @@ const Guestbook: NextPage = () => {
             onClick={sessionData ? () => signOut() : () => signIn()}
           >   {sessionData ? "Leave 👋" : "Authenticate ✌️"}</button>
         </div>
+
+
+        <pre>{data && JSON.stringify(data, null,2)}</pre>
         </div>
         
 
