@@ -1,11 +1,14 @@
 <script>
+	import LayoutContainer  from "../components/LayoutContainer.svelte";
   import "../app.css";
 </script>
 
-<slot />
+<LayoutContainer>
+  <slot />
+</LayoutContainer>
 
 <style lang="postcss" global>
   :global(html) {
-    background-color: theme(colors.gray.800);
+    background-color: theme(colors.gray.900);
   }
 </style>
