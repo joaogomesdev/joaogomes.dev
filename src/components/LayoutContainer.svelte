@@ -2,7 +2,7 @@
   import NavItem from './NavLink.svelte'
 </script>
 
-<div class="font-Poppins flex w-screen flex-col items-center bg-gray-50 text-gray-900 transition-all dark:bg-zinc-900 dark:text-zinc-50">
+<div class="font-Poppins flex w-full flex-col items-center bg-gray-50 text-gray-900 transition-all dark:bg-zinc-900 dark:text-zinc-50">
   <div class="mx-auto min-h-screen w-full max-w-4xl px-8 lg:px-0">
     <header class="w-full mt-14 flex items-center justify-between">
       <nav class="flex  gap-10 flex-col sm:flex-row">

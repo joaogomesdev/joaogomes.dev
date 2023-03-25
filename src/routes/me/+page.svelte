@@ -1,9 +1,11 @@
 <script>
+  import Icon from '@iconify/svelte';
+
   import me from '$lib/assets//me.png'
   import memoji from '$lib/assets//memoji.png'
 </script>
 
-<div id="about" class="scroll-smooth w-screen 3xs:max-w-2lg md:max-w-4xl">
+<div id="about" class="scroll-smooth w-full 3xs:max-w-2lg md:max-w-4xl">
   <div class="flex flex-col md:flex-row justify-between items-center sm:items-start gap-10 md:gap-0">
     <div class="flex flex-col gap-4 self-start">
       <h1 class="font-bold text-4xl">About me.</h1>
@@ -16,7 +18,7 @@
       </div>
     </div>
     
-    <div>
+    <div class="">
       <img
         src={me}
         class="rounded-3xl 3xl:mr-2 md:mr-0"
@@ -159,24 +161,22 @@
 
       </div>
   </div>
-<!-- 
+
   <div class="mt-20 flex justify-between items-end w-full">
 
-    <Link href="#about">
-      <span class="border-2 border-indigo-500 p-4 rounded-full cursor-pointer hidden sm:inline-flex">
-        <AiOutlineArrowUp size={28} class="text-[#FBAE95]" />
-      </span>
-    </Link>
+    <a href="#" class="border-2 border-indigo-500 p-4 rounded-full cursor-pointer hidden sm:inline-flex">
+      <Icon style="color: #FBAE95; font-size: 28px;" icon="material-symbols:arrow-upward-rounded"/>
+    </a>
 
     <div class="flex justify-center items-center gap-2">
-      <Link href="/me/what-i-use">
+      <a href="/me/uses">
         <h1 class="text-4xl hover-underline-animation  after:bg-gray-800 after:dark:bg-white cursor-pointer ">What i use.</h1>
-      </Link>
-      <Link href="/me/what-i-use">
-        <span class="border-2 border-indigo-500 p-3 rounded-full cursor-pointer">
-          <AiOutlineArrowRight size={24} class="text-[#FBAE95]" />
-        </span>
-      </Link>
+      </a>
+      <a href="/me/uses" class="border-2 border-indigo-500 p-3 rounded-full cursor-pointer">
+        <Icon style="color: #FBAE95; font-size: 28px;" icon="material-symbols:arrow-forward-rounded"/>
+      </a>
     </div>
-  </div> -->
+
+  </div>
+
 </div> 
