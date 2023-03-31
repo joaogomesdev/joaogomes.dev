@@ -10,5 +10,9 @@ export async function saveSignature(username: string, message: string) {
 }
 
 export async function getAllSignatures() {
-	return await prisma.signature.findMany();
+	return await prisma.signature.findMany({
+		orderBy: {
+			createdAt: 'asc'
+		}
+	});
 }

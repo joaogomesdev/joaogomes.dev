@@ -3,7 +3,6 @@
 	import { invalidate } from '$app/navigation';
 	import type { SubmitFunction } from '@sveltejs/kit';
 	import type { ActionData, PageData } from './$types';
-	import { navigating } from '$app/stores';
 	import Signature from '../../components/Signature.svelte';
 
 	let isLoading = false;
