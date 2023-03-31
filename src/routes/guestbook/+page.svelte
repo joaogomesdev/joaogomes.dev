@@ -23,6 +23,8 @@
 			invalidate('app:signatures');
 		};
 	};
+
+	console.log(signatures);
 </script>
 
 <div>

@@ -2,11 +2,7 @@ import { getAllSignatures, saveSignature } from '$lib/services/signatures';
 import { fail } from '@sveltejs/kit';
 import type { Actions } from './$types';
 
-export const load = async ({ depends, setHeaders }) => {
-	setHeaders({
-		'Cache-Control': `max-age=0, s-maxage=${60 * 60}`
-	});
-
+export const load = async ({ depends }) => {
 	const signatures = await getAllSignatures();
 
 	depends('app:signatures');
