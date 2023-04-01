@@ -170,7 +170,7 @@
 
     <div class="flex justify-center items-center gap-2">
       <a href="/me/uses">
-        <h1 class="text-4xl hover-underline-animation  after:bg-gray-800 after:dark:bg-white cursor-pointer ">What i use.</h1>
+        <h1 class="text-4xl hover-underline-animationafter:bg-white cursor-pointer ">What i use.</h1>
       </a>
       <a href="/me/uses" class="border-2 border-indigo-500 p-3 rounded-full cursor-pointer">
         <Icon style="color: #FBAE95; font-size: 28px;" icon="material-symbols:arrow-forward-rounded"/>
