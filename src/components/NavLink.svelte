@@ -13,8 +13,8 @@
 href={href}
 class={cn(
   isActive
-    ? "font-semibold text-gray-800  dark:text-zinc-100"
-    : "font-normal hover-underline-animation  after:bg-gray-800 after:dark:bg-zinc-400  dark:text-zinc-400",
+    ? "font-semibold text-zinc-100"
+    : "font-normal hover-underline-animation after:bg-zinc-400 text-zinc-400",
   "cursor-pointer"
 )}
 >

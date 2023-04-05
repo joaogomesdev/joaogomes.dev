@@ -16,9 +16,6 @@ export const actions: Actions = {
 		const username = String(formData.get('username'));
 		const message = String(formData.get('message'));
 
-		console.log(username);
-		console.log(message);
-
 		if (!username) {
 			return fail(400, {
 				message,
