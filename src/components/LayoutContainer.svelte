@@ -6,7 +6,7 @@
 <div class="font-Poppins flex w-full flex-col items-center transition-all bg-zinc-900 text-zinc-50">
   <div class="mx-auto min-h-screen w-full max-w-4xl px-8 lg:px-0">
     <header class="w-full mt-14 flex items-center justify-between">
-      <nav class="flex  gap-10 flex-col sm:sflex-row">
+      <nav class="flex gap-10 flex-col sm:flex-row">
         <NavItem href="/me" text="Me" />
         <NavItem href="/me/uses" text="What i use" />
         <NavItem href="/guestbook" text="Guestbook" />
