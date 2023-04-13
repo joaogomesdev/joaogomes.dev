@@ -129,7 +129,6 @@
 				<Signature
 					username={signature.username}
 					message={signature.body}
-					createdAt={signature.createdAt}
 				/>
 			{/each}
 		{:else}
