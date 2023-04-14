@@ -32,7 +32,7 @@
 					target="”_blank”"
 					class="text-2xl transition-colors hover:text-zinc-600"
 				>
-					<Icon icons="mdi:github" />
+					<Icon icon="mdi:github" />
 				</a>
 
 				<!-- <div class="flex justify-center items-center gap-4">
