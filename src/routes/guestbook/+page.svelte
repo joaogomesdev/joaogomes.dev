@@ -53,11 +53,10 @@
 			</div>
 			<div class="w-full">
 				<label class="block text-gray-300 text-sm font-bold mb-2" for="message"> Message </label>
-				<input
+				<textarea
 					name="message"
 					placeholder="Enter you message..."
-					type="text"
-					class="full w-full px-2 h-10 bg-zinc-800 rounded-md text-gray-400"
+					class="full w-full p-2 h-10 bg-zinc-800 rounded-md text-gray-400"
 				/>
 			</div>
 			<div class="self-end">
@@ -126,10 +125,7 @@
 	<div class="mt-12">
 		{#if signatures.length > 0}
 			{#each signatures as signature}
-				<Signature
-					username={signature.username}
-					message={signature.body}
-				/>
+				<Signature username={signature.username} message={signature.body} />
 			{/each}
 		{:else}
 			<div class="flex w-full justify-center items-center text-lg">No signatures yet 😔</div>
