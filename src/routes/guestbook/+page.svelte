@@ -12,7 +12,7 @@
 
 	$: ({ signatures } = data);
 
-	const submitSignature: SubmitFunction = (input) => {
+	const submitSignature: SubmitFunction = () => {
 		// form validations
 		isLoading = true;
 		return async ({ update }) => {
@@ -57,6 +57,7 @@
 					name="message"
 					placeholder="Enter you message..."
 					type="text"
+					maxlength="90"
 					class="full w-full px-2 h-10 bg-zinc-800 rounded-md text-gray-400"
 				/>
 			</div>
@@ -126,10 +127,7 @@
 	<div class="mt-12">
 		{#if signatures.length > 0}
 			{#each signatures as signature}
-				<Signature
-					username={signature.username}
-					message={signature.body}
-				/>
+				<Signature username={signature.username} message={signature.body} />
 			{/each}
 		{:else}
 			<div class="flex w-full justify-center items-center text-lg">No signatures yet 😔</div>
