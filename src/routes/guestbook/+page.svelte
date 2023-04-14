@@ -13,13 +13,17 @@
 	$: ({ signatures } = data);
 
 	const submitSignature: SubmitFunction = () => {
+		// form validations
 		isLoading = true;
 		return async ({ update }) => {
+			// do something after submit
 			isLoading = false;
 			await update();
 			invalidate('app:signatures');
 		};
 	};
+
+	console.log(signatures);
 </script>
 
 <div>
@@ -35,7 +39,7 @@
 		<form
 			action="?/submitSignature"
 			method="post"
-			class="flex flex-col h-full w-full sm:flex-row gap-2 justify-between items-start"
+			class="flex flex-col h-full w-full sm:flex-row gap-2 justify-between"
 			use:enhance={submitSignature}
 		>
 			<div class="w-full sm:w-[40%]">
@@ -44,53 +48,57 @@
 					name="username"
 					placeholder="Enter you name..."
 					type="text"
-					class="full h-10 w-full px-2 bg-zinc-800 rounded-md text-gray-400"
+					class="full w-full px-2 h-10 bg-zinc-800 rounded-md text-gray-400"
 				/>
 			</div>
-			<div class="w-full h-full">
+			<div class="w-full">
 				<label class="block text-gray-300 text-sm font-bold mb-2" for="message"> Message </label>
-				<textarea
+				<input
 					name="message"
 					placeholder="Enter you message..."
-					class="full min-h-min w-full p-2 bg-zinc-800 rounded-md text-gray-400"
+					type="text"
+					maxlength="90"
+					class="full w-full px-2 h-10 bg-zinc-800 rounded-md text-gray-400"
 				/>
 			</div>
-			{#if isLoading}
-				<button
-					type="button"
-					class="flex self-end items-center justify-center h-10 px-4 py-2 text-sm font-semibold leading-6 text-white transition duration-150 ease-in-out border border-indigo-500 rounded-md shadow cursor-not-allowed hover:bg-indigo-400 disabled:hover:bg-transparent"
-					disabled
-				>
-					<svg
-						class="w-5 h-5 mr-3 -ml-1 text-white animate-spin"
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
+			<div class="self-end">
+				{#if isLoading}
+					<button
+						type="button"
+						class="flex items-center justify-center h-10 px-4 py-2 text-sm font-semibold leading-6 text-white transition duration-150 ease-in-out border border-indigo-500 rounded-md shadow cursor-not-allowed hover:bg-indigo-400 disabled:hover:bg-transparent"
+						disabled
 					>
-						<circle
-							class="opacity-25"
-							cx="12"
-							cy="12"
-							r="10"
-							stroke="currentColor"
-							stroke-width="4"
-						/>
-						<path
-							class="opacity-75"
-							fill="currentColor"
-							d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-						/>
-					</svg>
-					Sending...
-				</button>
-			{:else}
-				<button
-					type="submit"
-					class="flex self-end justify-center items-center h-10 px-4 py-2 text-sm font-semibold leading-6 text-white transition duration-150 ease-in-out border border-indigo-500 rounded-md shadow hover:bg-indigo-400 disabled:hover:bg-transparent"
-				>
-					Send
-				</button>
-			{/if}
+						<svg
+							class="w-5 h-5 mr-3 -ml-1 text-white animate-spin"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+						>
+							<circle
+								class="opacity-25"
+								cx="12"
+								cy="12"
+								r="10"
+								stroke="currentColor"
+								stroke-width="4"
+							/>
+							<path
+								class="opacity-75"
+								fill="currentColor"
+								d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+							/>
+						</svg>
+						Sending...
+					</button>
+				{:else}
+					<button
+						type="submit"
+						class="flex justify-center items-center h-10 px-4 py-2 text-sm font-semibold leading-6 text-white transition duration-150 ease-in-out border border-indigo-500 rounded-md shadow hover:bg-indigo-400 disabled:hover:bg-transparent"
+					>
+						Send
+					</button>
+				{/if}
+			</div>
 		</form>
 	</div>
 
