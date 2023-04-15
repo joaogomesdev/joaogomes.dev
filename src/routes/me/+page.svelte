@@ -6,12 +6,10 @@
 </script>
 
 <div id="about" class="scroll-smooth w-full 3xs:max-w-2lg md:max-w-4xl">
-	<div
-		class="flex flex-col md:flex-row justify-between items-center sm:items-start gap-10 md:gap-0"
-	>
-		<div class="flex flex-col gap-4 self-start">
+	<div class="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-0">
+		<div class="flex flex-col gap-4">
 			<h1 class="font-bold text-4xl">About me.</h1>
-			<div class="flex flex-col gap-4 3xs:max-w-sm md:max-w-md">
+			<div class="flex flex-col gap-4 w-full md:max-w-md">
 				<p class="text-zinc-400 font-mono">
 					My name is <span class="text-purple-500 font-semibold">João Gomes</span>, Im 20 years old
 					and i live in Espinho, Portugal. 🇵🇹
@@ -28,21 +26,19 @@
 					I am always open to meeting new people and sharing knowledge.
 				</p>
 				<p class="text-zinc-400 font-mono">
-					I would describe myself as <span class="font-semibold">proactive</span>,
-					<span class="font-semibold">dedicated</span>
-					and <span class="font-semibold"> motivated</span>.
+					I would describe myself as <span class="font-semibold text-green-500">proactive</span>,
+					<span class="font-semibold text-yellow-500">dedicated</span>
+					and <span class="font-semibold text-red-500"> motivated</span>.
 				</p>
 			</div>
 		</div>
 
-		<div class="">
+		<div>
 			<img src={me} class="rounded-3xl 3xl:mr-2 md:mr-0" alt="Me" width="345" height="490" />
 		</div>
 	</div>
-	<div
-		class="mt-20 flex flex-col md:flex-row justify-between gap-8 md:gap-0 w-full items-center md:items-start"
-	>
-		<div class="max-w-lg flex flex-col gap-4">
+	<div class="mt-20 flex flex-col md:flex-row justify-between gap-8 md:gap-0 w-full">
+		<div class="flex flex-col gap-4">
 			<h1 class="font-bold text-4xl">Bio.</h1>
 			<p class="text-zinc-500 text-xl">Enthusiastic about Web / Mobile development.</p>
 			<p class="text-zinc-500 text-xl">
@@ -50,7 +46,7 @@
 			</p>
 		</div>
 
-		<div>
+		<div class="self-center">
 			<img src={memoji} alt="Memoji" />
 		</div>
 	</div>
