@@ -1,8 +1,9 @@
 import { getAllSignatures, saveSignature } from '$lib/services/signatures';
 import { fail } from '@sveltejs/kit';
 import type { Actions } from './$types';
+import type { PageLoad } from '../$types';
 
-export const load = async ({ depends }) => {
+export const load: PageLoad = async ({ depends }) => {
 	const signatures = await getAllSignatures();
 
 	depends('app:signatures');
@@ -16,22 +17,19 @@ export const actions: Actions = {
 		const username = String(formData.get('username'));
 		const message = String(formData.get('message'));
 
-		if (!username) {
-			return fail(400, {
-				message,
-				missing: true
-			});
+		if (!username || typeof username !== 'string') {
+			return fail(400, { username, missing: true });
 		}
 
-		if (!message) {
-			return fail(400, {
-				message,
-				missing: true
-			});
+		if (!message || typeof message !== 'string') {
+			return fail(400, { message, missing: true });
 		}
 
-		await saveSignature(username, message);
-
-		return { success: true };
+		try {
+			await saveSignature(username, message);
+			return { success: true };
+		} catch (err: any) {
+			return fail(400, { error: true, message: err.message });
+		}
 	}
 };
