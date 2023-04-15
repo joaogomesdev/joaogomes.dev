@@ -1,46 +1,48 @@
-# create-svelte
+<div align="center" id="top">
+  <img src="https://i.imgur.com/BaOQTcD.png" alt="An website screenshot" />
+</div>
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+<h1 align="center">joaogomes.dev</h1>
 
-## Creating a project
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/joaogomesdev/joaogomes.dev?color=7159C1">
 
-If you're seeing this, you've probably already done this step. Congrats!
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/joaogomesdev/joaogomes.dev?color=7159C1">
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/joaogomesdev/joaogomes.dev?color=7159C1" >
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+  <img alt="License" src="https://img.shields.io/github/last-commit/joaogomesdev/joaogomes.dev?color=7159C1">
+</p>
 
-## Developing
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#memo-license">Licence</a> &#xa0; | &#xa0;
+  <a href="https://github.com/JoaoGomes5" target="_blank">Author</a>
+</p>
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+<br>
 
-```bash
-npm run dev
+## :dart: About
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+My own peace of the internet.
 
-## Building
+## :rocket: Technologies
 
-To create a production version of your app:
+The following tools/dependencies were used in this project:
 
-```bash
-npm run build
-```
+- [SvelteKit](https://kit.svelte.dev)
+- [Tailwind CSS](https://tailwindcss.com)
+- [Prisma](https://prisma.io)
+- [Supabase](https://supabase.com)
+- [TypeScript](https://www.typescriptlang.org)
 
-You can preview the production build with `npm run preview`.
+## :memo: Licence
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
-# Dev
+Made with :heart: by <a href="https://github.com/joaogomesdev" target="_blank">João Gomes</a>
 
-Postgres database
+&#xa0;
 
-```bash
-docker run --name pg -p 5432:5432 -e POSTGRES_USER=docker -e POSTGRES_PASSWORD=docker -e POSTGRES_DB=joaogomesdev-dev -d postgres
-```
+<a href="#top">Back to top</a>
