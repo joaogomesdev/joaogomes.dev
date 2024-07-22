@@ -5,42 +5,24 @@
 </script>
 
 <svelte:head>
-  <link
-    rel="canonical"
-    href={$page.data.story?.content?.seo_canonical_url ||
-      `${$page.url.origin}${$page.url.pathname}`}
-  />
-
+	<!-- HTML Meta Tags -->
   <title>joaogomes.dev - My own piece of the internet.</title>
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="joaogomes.dev - My own piece of the internet." />
-  <meta
-    name="description"
-    content="My name is João Gomes, Im 20 years old developer from Portugal 🇵🇹"
-  />
-  <meta
-    property="og:title"
-    content="joaogomes.dev - My own piece of the internet."
-  />
-  <meta
-    property="twitter:title"
-    content="joaogomes.dev - My own piece of the internet."
-  />
-  <meta
-    property="og:description"
-    content="My name is João Gomes, Im 20 years old developer from Portugal 🇵🇹"
-  />
-  <meta
-    property="twitter:description"
-    content="My name is João Gomes, Im 20 years old developer from Portugal 🇵🇹"
-  />
-  <meta property="og:url" content={$page.url.toString()} />
-  <meta property="og:type" content="website" />
-
-  <meta property="og:image" content="{$page.url.origin}/og.png" />
-<meta property="twitter:image" content="{$page.url.origin}/og.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta name="description" content="My name is João Gomes, Im 20 years old developer from Portugal 🇵🇹">
+  
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://joaogomes.dev">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="joaogomes.dev - My own piece of the internet.">
+  <meta property="og:description" content="My name is João Gomes, Im 20 years old developer from Portugal 🇵🇹">
+  <meta property="og:image" content="https://joaogomes.dev/og.png">
+  
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="joaogomes.dev">
+  <meta property="twitter:url" content="https://joaogomes.dev">
+  <meta name="twitter:title" content="joaogomes.dev - My own piece of the internet.">
+  <meta name="twitter:description" content="My name is João Gomes, Im 20 years old developer from Portugal 🇵🇹">
+  <meta name="twitter:image" content="https://joaogomes.dev/og.png">
 </svelte:head>
 
 <div class="font-Poppins flex w-full flex-col items-center transition-all bg-zinc-900 text-zinc-50">
