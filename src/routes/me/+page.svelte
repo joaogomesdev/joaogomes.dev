@@ -2,7 +2,6 @@
 	import Icon from '@iconify/svelte';
 
 	import me from '$lib/assets//me.png';
-	import memoji from '$lib/assets//memoji.png';
 </script>
 
 <div id="about" class="scroll-smooth w-full 3xs:max-w-2lg md:max-w-4xl">
@@ -37,7 +36,8 @@
 			<img src={me} class="rounded-3xl 3xl:mr-2 md:mr-0" alt="Me" width="345" height="490" />
 		</div>
 	</div>
-	<div class="mt-20 flex flex-col md:flex-row justify-between gap-8 md:gap-0 w-full">
+	
+	<!-- <div class="mt-20 flex flex-col md:flex-row justify-between gap-8 md:gap-0 w-full">
 		<div class="flex flex-col gap-4">
 			<h1 class="font-bold text-4xl">Bio.</h1>
 			<p class="text-zinc-500 text-xl">Enthusiastic about Web / Mobile development.</p>
@@ -49,7 +49,7 @@
 		<div class="self-center">
 			<img src={memoji} alt="Memoji" />
 		</div>
-	</div>
+	</div> -->
 
 	<div class="mt-20">
 		<div class="flex flex-col gap-4">
