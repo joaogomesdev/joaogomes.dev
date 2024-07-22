@@ -11,20 +11,20 @@
       `${$page.url.origin}${$page.url.pathname}`}
   />
 
-  <title>joaogomes.dev</title>
+  <title>joaogomes.dev - My own piece of the internet.</title>
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="joaogomes.dev" />
+  <meta name="twitter:site" content="joaogomes.dev - My own piece of the internet." />
   <meta
     name="description"
     content="My name is João Gomes, Im 20 years old developer from Portugal 🇵🇹"
   />
   <meta
     property="og:title"
-    content="joaogomes.dev"
+    content="joaogomes.dev - My own piece of the internet."
   />
   <meta
     property="twitter:title"
-    content="joaogomes.dev"
+    content="joaogomes.dev - My own piece of the internet."
   />
   <meta
     property="og:description"

@@ -25,7 +25,7 @@
 
 ## :dart: About
 
-My own peace of the internet.
+My own piece of the internet.
 
 ## :rocket: Technologies
 
