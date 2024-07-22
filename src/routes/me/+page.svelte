@@ -10,7 +10,7 @@
 			<h1 class="font-bold text-4xl">About me.</h1>
 			<div class="flex flex-col gap-4 w-full md:max-w-md">
 				<p class="text-zinc-400 font-mono">
-					My name is <span class="text-purple-500 font-semibold">João Gomes</span>, Im 20 years old
+					My name is <span class="text-purple-500 font-semibold">João Gomes</span>, Im 22 years old
 					and i live in Espinho, Portugal. 🇵🇹
 				</p>
 				<p class="text-zinc-400 font-mono">

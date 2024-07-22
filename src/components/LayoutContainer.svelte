@@ -16,15 +16,7 @@
   <meta name="twitter:site" content="joaogomes.dev" />
   <meta
     name="description"
-    content="My name is João Gomes, Im 20 years old and i live in Espinho, Portugal. 🇵🇹
-
-	In my free time, I enjoy playing video games, watching movies, listening to music and most importantly, learning new things.
-	
-	I am on a journey to become a software developer with the goal of creating high-quality software that can change peoples lives.
-	
-	I am always open to meeting new people and sharing knowledge.
-	
-	I would describe myself as proactive, dedicated and motivated."
+    content="My name is João Gomes, Im 20 years old developer from Portugal 🇵🇹"
   />
   <meta
     property="og:title"
@@ -36,27 +28,11 @@
   />
   <meta
     property="og:description"
-    content="My name is João Gomes, Im 20 years old and i live in Espinho, Portugal. 🇵🇹
-
-	In my free time, I enjoy playing video games, watching movies, listening to music and most importantly, learning new things.
-	
-	I am on a journey to become a software developer with the goal of creating high-quality software that can change peoples lives.
-	
-	I am always open to meeting new people and sharing knowledge.
-	
-	I would describe myself as proactive, dedicated and motivated."
+    content="My name is João Gomes, Im 20 years old developer from Portugal 🇵🇹"
   />
   <meta
     property="twitter:description"
-    content="My name is João Gomes, Im 20 years old and i live in Espinho, Portugal. 🇵🇹
-
-	In my free time, I enjoy playing video games, watching movies, listening to music and most importantly, learning new things.
-	
-	I am on a journey to become a software developer with the goal of creating high-quality software that can change peoples lives.
-	
-	I am always open to meeting new people and sharing knowledge.
-	
-	I would describe myself as proactive, dedicated and motivated."
+    content="My name is João Gomes, Im 20 years old developer from Portugal 🇵🇹"
   />
   <meta property="og:url" content={$page.url.toString()} />
   <meta property="og:type" content="website" />
