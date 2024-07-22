@@ -11,7 +11,7 @@
 			<div class="flex flex-col gap-4 w-full md:max-w-md">
 				<p class="text-zinc-400 font-mono">
 					My name is <span class="text-purple-500 font-semibold">João Gomes</span>, Im 22 years old
-					and i live in Espinho, Portugal. 🇵🇹
+					and I live in Espinho, Portugal. 🇵🇹
 				</p>
 				<p class="text-zinc-400 font-mono">
 					In my free time, I enjoy playing video games, watching movies, listening to music and most
