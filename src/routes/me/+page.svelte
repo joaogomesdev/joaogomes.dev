@@ -6,29 +6,36 @@
 </script>
 
 <svelte:head>
+	<!-- HTML Meta Tags -->
+	<title>joaogomes.dev - My own piece of the internet.</title>
+	<meta
+		name="description"
+		content="My name is João Gomes, Im 22 years old developer from Portugal 🇵🇹"
+	/>
 
-<!-- HTML Meta Tags -->
-<title>joaogomes.dev - My own piece of the internet.</title>
-<meta name="description" content="My name is João Gomes, Im 22 years old developer from Portugal 🇵🇹">
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content={$page.url.toString()} />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="joaogomes.dev - My own piece of the internet." />
+	<meta
+		property="og:description"
+		content="My name is João Gomes, Im 22 years old developer from Portugal 🇵🇹"
+	/>
+	<meta property="og:image" content="{$page.url.origin}/og.png" />
 
-<!-- Facebook Meta Tags -->
-<meta property="og:url" content={$page.url.toString()} />
-<meta property="og:type" content="website">
-<meta property="og:title" content="joaogomes.dev - My own piece of the internet.">
-<meta property="og:description" content="My name is João Gomes, Im 22 years old developer from Portugal 🇵🇹">
-<meta property="og:image" content="{$page.url.origin}/og.png" />
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="twitter:domain" content="joaogomes.dev" />
+	<meta property="twitter:url" content={$page.url.toString()} />
+	<meta name="twitter:title" content="joaogomes.dev - My own piece of the internet." />
+	<meta
+		name="twitter:description"
+		content="My name is João Gomes, Im 22 years old developer from Portugal 🇵🇹"
+	/>
+	<meta property="twitter:image" content="{$page.url.origin}/og.png" />
 
-<!-- Twitter Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta property="twitter:domain" content="joaogomes.dev">
-<meta property="twitter:url" content={$page.url.toString()} >
-<meta name="twitter:title" content="joaogomes.dev - My own piece of the internet.">
-<meta name="twitter:description" content="My name is João Gomes, Im 22 years old developer from Portugal 🇵🇹">
-<meta property="twitter:image" content="{$page.url.origin}/og.png" />
-
- 
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
 </svelte:head>
 
 <div id="about" class="scroll-smooth w-full 3xs:max-w-2lg md:max-w-4xl">
@@ -63,7 +70,7 @@
 			<img src={me} class="rounded-3xl 3xl:mr-2 md:mr-0" alt="Me" width="345" height="490" />
 		</div>
 	</div>
-	
+
 	<!-- <div class="mt-20 flex flex-col md:flex-row justify-between gap-8 md:gap-0 w-full">
 		<div class="flex flex-col gap-4">
 			<h1 class="font-bold text-4xl">Bio.</h1>
@@ -95,7 +102,7 @@
 				I am looking forward to what the future holds. <span class="ml-2">🚀</span>
 			</p>
 
-			<div class="mt-10 flex flex-col gap-8 items-start">
+			<div class="mt-10 grid grid-cols-2 gap-8 items-start">
 				<div class="gap-1">
 					<p class="text-2xl font-bold text-red-500">🏭 Techical Support - Internship</p>
 					<div class="text-lg">
@@ -171,7 +178,7 @@
 		</div>
 	</div>
 
-	<div
+	<!-- <div
 		class="mt-20 flex flex-col md:flex-row justify-between gap-8 md:gap-0 w-full items-center md:items-start"
 	>
 		<div class="flex flex-col">
@@ -209,11 +216,11 @@
 				Most importantly, I am always looking to evolve and learn! 🚀
 			</p>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="mt-20 flex justify-between items-end w-full">
 		<a
-			href="#"
+			href="#about"
 			class="border-2 border-indigo-500 p-4 rounded-full cursor-pointer hidden sm:inline-flex"
 		>
 			<Icon style="color: #FBAE95; font-size: 28px;" icon="material-symbols:arrow-upward-rounded" />
