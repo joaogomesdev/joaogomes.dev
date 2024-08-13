@@ -167,7 +167,6 @@
 			<UseItem name="Typescript" />
 			<UseItem name="Next" />
 			<UseItem name="Svelte">- rebuilding this website with SvelteKit.</UseItem>
-			<UseItem link="https://supabase.com" name="Supabase" />
 			<UseItem link="https://prisma.io" name="Prisma" />
 			<UseItem name="Tailwind CSS" />
 			<UseItem name="React Native">- with Expo</UseItem>

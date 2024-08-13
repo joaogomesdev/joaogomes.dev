@@ -104,7 +104,7 @@
 
 			<div class="mt-10 grid grid-cols-2 gap-8 items-start">
 				<div class="gap-1">
-					<p class="text-2xl font-bold text-red-500">🏭 Techical Support - Internship</p>
+					<p class="text-2xl font-bold text-red-500">🏭 Technical Support - Internship</p>
 					<div class="text-lg">
 						<a href="https://www.sorema.pt" class="underline underline-offset-4" target="blank"
 							>Sorema</a
