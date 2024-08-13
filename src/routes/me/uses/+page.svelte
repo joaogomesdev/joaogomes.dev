@@ -59,18 +59,16 @@
 		<div class="ml-10 mt-2 text-lg">
 			<UseItem name="Amazon Backpack" />
 			<UseItem name="M1 Macbook Air">- 16 Ram - 251 Storage</UseItem>
-			<UseItem name="Iphone 7" />
-			<UseItem name="Magic Mouse 2" />
+			<UseItem name="Iphone 11" />
+			<UseItem name="Mouse Logitech MX Master" />
 			<UseItem name="UGreen 7 Port hub" />
 			<UseItem name="Powerbank" />
 			<UseItem name="Laptop sleeve" />
 			<UseItem name="Apple Airpods 2nd generation" />
 			<UseItem name="Apple Airpods Pro 2 generation" />
-			<UseItem name="Regular mousepad" />
 			<UseItem name="USB Lightning cable" />
 			<UseItem name="USB-C cable" />
 			<UseItem name="USB regular cable" />
-			<UseItem name="Reuseable water bottle" />
 		</div>
 	</div>
 
@@ -83,7 +81,7 @@
 			<UseItem name="Notion" />
 			<UseItem name="Arc Browser" />
 			<UseItem name="Raycast" />
-			<UseItem name="Authy" />
+			<UseItem name="BitWarden" />
 			<UseItem name="Clipy" />
 		</div>
 	</div>
@@ -92,17 +90,10 @@
 		<h2 class="text-2xl font-bold text-indigo-500">Mobile apps.</h2>
 		<p class="text-lg text-zinc-400 mt-3">Mobile apps that i have installed on my Iphone 7 📱</p>
 		<div class="ml-10 mt-2 text-lg">
-			<UseItem name="YT Music" />
 			<UseItem name="Spotify" />
 			<UseItem name="MB Way" />
-			<UseItem name="Notion" />
-			<UseItem name="Sports Go" />
-			<UseItem name="Moovit" />
-			<UseItem name="Expo Go" />
-			<UseItem link="https://apps.apple.com/us/app/twilio-authy/id494168017" name="Authy" />
+			<UseItem name="Strong" />
 			<UseItem name="WhatsApp" />
-			<UseItem link="https://apps.apple.com/us/app/reddit/id1064216828" name="Reddit" />
-			<UseItem name="Tick Tick" />
 		</div>
 	</div>
 	<div class="mt-10">
@@ -180,15 +171,6 @@
 			<UseItem link="https://prisma.io" name="Prisma" />
 			<UseItem name="Tailwind CSS" />
 			<UseItem name="React Native">- with Expo</UseItem>
-		</div>
-	</div>
-
-	<div class="mt-10">
-		<h2 class="text-2xl font-bold text-indigo-500">Services.</h2>
-		<p class="text-lg text-zinc-400 mt-3">Tech / Entertainment services that i use 💸</p>
-		<div class="ml-10 mt-2 text-lg">
-			<UseItem name="Spotify" />
-			<UseItem name="Vercel" />
 		</div>
 	</div>
 </div>
