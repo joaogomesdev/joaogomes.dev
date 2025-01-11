@@ -35,29 +35,36 @@
 </script>
 
 <svelte:head>
+	<!-- HTML Meta Tags -->
+	<title>joaogomes.dev | Sign my guestbook!</title>
+	<meta
+		name="description"
+		content="This part of joaogomes.dev is my guestbook, where anyone can leave a message. Im waiting for yours!"
+	/>
 
-<!-- HTML Meta Tags -->
-<title>joaogomes.dev | Sign my guestbook!</title>
-<meta name="description" content="This part of joaogomes.dev is my guestbook, where anyone can leave a message. Im waiting for yours!">
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content={$page.url.toString()} />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="joaogomes.dev | Sign my guestbook!." />
+	<meta
+		property="og:description"
+		content="This part of joaogomes.dev is my guestbook, where anyone can leave a message. Im waiting for yours!"
+	/>
+	<meta property="og:image" content="https://joaogomes.dev/og.png" />
 
-<!-- Facebook Meta Tags -->
-<meta property="og:url" content={$page.url.toString()} />
-<meta property="og:type" content="website">
-<meta property="og:title" content="joaogomes.dev | Sign my guestbook!.">
-<meta property="og:description" content="This part of joaogomes.dev is my guestbook, where anyone can leave a message. Im waiting for yours!">
-<meta property="og:image" content="https://joaogomes.dev/og.png" />
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="twitter:domain" content="joaogomes.dev" />
+	<meta property="twitter:url" content={$page.url.toString()} />
+	<meta name="twitter:title" content="joaogomes.dev | Sign my guestbook!" />
+	<meta
+		name="twitter:description"
+		content="This part of joaogomes.dev is my guestbook, where anyone can leave a message. Im waiting for yours!"
+	/>
+	<meta property="twitter:image" content="https://joaogomes.dev/og.png" />
 
-<!-- Twitter Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta property="twitter:domain" content="joaogomes.dev">
-<meta property="twitter:url" content={$page.url.toString()} >
-<meta name="twitter:title" content="joaogomes.dev | Sign my guestbook!">
-<meta name="twitter:description" content="This part of joaogomes.dev is my guestbook, where anyone can leave a message. Im waiting for yours!">
-<meta property="twitter:image" content="https://joaogomes.dev/og.png" />
-
- 
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
 </svelte:head>
 
 <div>
@@ -162,7 +169,13 @@
 	<div class="mt-10">
 		{#if signatures.length > 0}
 			{#each signatures as signature}
-				<Signature username={signature.username} message={signature.body} />
+				<Signature
+					username={signature.username}
+					message={signature.body}
+					date={+signature.updatedAt.getFullYear() === 2024 && +signature.updatedAt.getMonth() < 11
+						? undefined
+						: signature.updatedAt}
+				/>
 			{/each}
 		{:else}
 			<div class="flex w-full justify-center items-center text-lg">No signatures yet 😔</div>
